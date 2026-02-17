@@ -7,8 +7,8 @@ export default defineConfig({
   root: 'client',
   resolve: {
     alias: {
-      // السطرين دول هم اللي هيحلوا مشكلة "@/components/ui/sonner"
-      "@": path.resolve(__dirname, "./src"),
+      // بنقول لـ Vite إن علامة @ بتشاور على مجلد src اللي جوه client
+      "@": path.resolve(__dirname, "client/src"),
     },
   },
   build: {
