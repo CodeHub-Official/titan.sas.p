@@ -1,13 +1,1 @@
-import { useState, useEffect } from 'react';
-
-export function useAuth() {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // منطق التحقق من المستخدم مؤقتاً
-    setLoading(false);
-  }, []);
-
-  return { user, loading, isAdmin: true };
-}
+export const useAuth = () => ({ user: { id: 1, role: 'admin' }, logout: () => {} });
