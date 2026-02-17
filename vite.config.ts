@@ -1,14 +1,20 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite'; // ضفنا ده
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tailwindcss(), // وضفناه هنا
+  ],
   root: 'client',
   resolve: {
     alias: {
-      // بنقول لـ Vite إن علامة @ بتشاور على مجلد src اللي جوه client
-      "@": path.resolve(__dirname, "client/src"),
+      "@": path.resolve(__dirname, "./client/src"),
     },
   },
   build: {
