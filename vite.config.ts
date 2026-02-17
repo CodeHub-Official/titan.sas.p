@@ -14,7 +14,6 @@ export default defineConfig({
   root: 'client',
   resolve: {
     alias: {
-      // بما أن الـ root هو client، فالمسار النسبي لـ src هو الحالي
       "@": path.resolve(__dirname, "./client/src"),
     },
   },
