@@ -1,1 +1,1 @@
-export const trpc = { useQuery: () => ({ data: null, isLoading: false }), useMutation: () => ({ mutateAsync: async () => {} }) } as any;
+export const trpc = { useQuery: () => ({ data: null }), useMutation: () => ({ mutateAsync: async () => {} }) } as any;

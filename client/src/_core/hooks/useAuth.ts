@@ -1,1 +1,1 @@
-export const useAuth = () => ({ user: { id: 1, role: 'admin' }, logout: () => {} });
+export const useAuth = () => ({ user: { id: 1 }, loading: false, isAdmin: true });
