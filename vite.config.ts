@@ -13,9 +13,8 @@ export default defineConfig({
   ],
   root: 'client',
   resolve: {
-   alias: {
-  "@": path.resolve(__dirname, "./src"), // شلنا كلمة client لأن الـ root أصلاً هو client
-},
+    alias: {
+      "@": path.resolve(__dirname, "./client/src"),
     },
   },
   build: {
