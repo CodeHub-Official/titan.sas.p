@@ -1,6 +1,6 @@
 {
   "name": "titan-joy-vip-pro",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "build": "vite build && esbuild server/_core/index.ts --platform=node --bundle --format=esm --outdir=dist"
@@ -8,11 +8,17 @@
   "dependencies": {
     "express": "4.21.2",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "lucide-react": "0.453.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.3.1"
   },
   "devDependencies": {
     "vite": "7.1.9",
     "@vitejs/plugin-react": "5.0.4",
-    "esbuild": "0.25.10"
+    "esbuild": "0.25.10",
+    "tailwindcss": "3.4.1",
+    "autoprefixer": "10.4.17",
+    "postcss": "8.4.35"
   }
 }
